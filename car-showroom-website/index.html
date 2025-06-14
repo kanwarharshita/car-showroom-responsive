@@ -1,0 +1,2152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+        body {
+            margin: 0;
+        }
+
+        .hero {
+           background-image: url('assets/img/banner.png');
+          height: 75vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+        }
+
+        .containar {
+            max-width: 1840px;
+            margin: 0 auto;
+        }
+
+        .about-section {
+            padding: 0px 320px;
+            height: 50%;
+        }
+
+        .about-form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 135px;
+        }
+
+        .about-contant h1 {
+            font-family: "Lato", sans-serif;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 100%;
+            color: #fff;
+        }
+
+        .about-contant p {
+            font-family: "Lato", sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+            width: 30%;
+            color: #fff;
+        }
+
+        .hero-btn a {
+            width: 150px;
+            height: 20px;
+            border-radius: 6px;
+            padding: 15px;
+            display: flex;
+            background: #007CC7;
+            color: #fff;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 17px;
+            font-weight: 600;
+            font-family: "Lato", sans-serif;
+        }
+
+        .hero-btn {
+            display: flex;
+            gap: 20px;
+        }
+
+        .search-input {
+            width: 49%;
+            position: relative;
+        }
+
+        .search-input input {
+            width: 100%;
+            border: 0;
+            background: #152836;
+            padding: 14px 60px;
+            color: #fff;
+        }
+
+        .search-input input::placeholder {
+            color: #fff;
+        }
+
+        .sreach-icon {
+            position: absolute;
+            inset: 10px 0 0 25px;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .search-input #cars {
+            width: 45%;
+            background: #152836;
+            padding: 12px;
+            border: 0;
+            color: #fff;
+        }
+
+        .search-input #cars1 {
+            width: 45%;
+            background: #152836;
+            padding: 12px;
+            border: 0;
+            color: #fff;
+        }
+
+        .search-btn {
+            max-width: 100%;
+            margin: 0 42%;
+        }
+
+        .search-btn a {
+            width: 150px;
+            height: 20px;
+            border-radius: 6px;
+            padding: 15px;
+            display: flex;
+            background: #007CC7;
+            color: #fff;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 17px;
+            font-weight: 600;
+            font-family: "Lato", sans-serif;
+        }
+
+        .main {
+            background: #0B0C10;
+            width: 100%;
+            height: 680px;
+            margin-top: 0;
+        }
+
+        .main .about-main {
+            padding-top: 250px;
+        }
+
+        .about-main .car {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .car .buy-car {
+            background: #0B0C10;
+            color: #fff;
+            height: 370px;
+            width: 400px;
+        }
+
+        .car .buy-car .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            border: 15px solid #007CC7;
+            width: 396.41px;
+            height: 188px;
+            border-radius: 3.99px;
+            border-width: 3.66px;
+        }
+
+        .car .buy-car .logo img {
+            max-width: 100%;
+        }
+
+        .car .buy-car .logo h2 {
+            height: 29px;
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            font-size: 23.94px;
+            line-height: 100%;
+            letter-spacing: 0;
+        }
+
+        .car .buy-car .details {
+            width: 400px;
+            height: 200px;
+        }
+
+        .car .buy-car .details h3 {
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            font-size: 33px;
+            line-height: 100%;
+            letter-spacing: 0;
+        }
+
+        .car .buy-car .details p {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 100%;
+            letter-spacing: 0;
+            width: 336px;
+        }
+
+        .explore-brands {
+            background: #12232E;
+            max-width: 100%;
+            padding: 30px 10px;
+            text-align: center;
+        }
+
+        .explore-brands h2 {
+            font-family: "Lato", sans-serif;
+            font-weight: 800;
+            font-size: 93.39px;
+            line-height: 100%;
+            letter-spacing: 0;
+            text-align: center;
+            margin: 0 0 20px 0;
+            color: #fff;
+        }
+
+        .explore-brands p {
+            height: 58px;
+            text-align: center;
+            font-family: Lato;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: 0;
+            color: #fff;
+            width: 958px;
+            margin: 0 auto;
+        }
+
+        .brand-logo {
+            background: #0B0C10;
+            max-width: 100%;
+            height: 300px;
+        }
+
+        .brand-logo .logo-img {
+            display: flex;
+            justify-content: center;
+            gap: 5%;
+            padding-top: 70px;
+        }
+
+        .brand-logo .logo-img img {
+            width: 162px;
+            height: 154px;
+            opacity: 0.5;
+        }
+
+        .shopping {
+            background-color: #0B0C10;
+            padding: 40px 0;
+        }
+
+        .containar {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .vehicle-listings {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: flex-start;
+            padding-left: 90px;
+        }
+
+        .vehicle-card {
+            border-radius: 3px;
+            padding: 16px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 330px;
+            box-sizing: border-box;
+            border: 2px solid #12232E;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .vehicle-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .vehicle-card-detail {
+            width: 282px;
+            height: 274px;
+        }
+
+        .new-badge {
+            color: #007CC7;
+            padding: 4px 13px;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 10px;
+            border: 1px solid #007CC7;
+            line-height: 100%;
+            font-family: "Lato", sans-serif;
+        }
+
+        .vehicle-title {
+            font-size: 19px;
+            margin: 5px 0;
+            color: #FFFFFF;
+            font-weight: 600;
+            line-height: 100%;
+            font-family: "Lato", sans-serif;
+            width: 282px;
+            height: 48px;
+        }
+
+        .vehicle-price {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+            color: #007CC7;
+            width: 90px;
+            height: 29px;
+            font-family: "Lato", sans-serif;
+        }
+
+        .vehicle-location {
+            width: 282px;
+            height: 20px;
+            margin-bottom: 0;
+            font-family: "Lato", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0;
+            color: #FFFFFF;
+        }
+
+        .vehicle-details {
+            margin: 15px 0;
+            display: flex;
+            flex-wrap: wrap;
+            width: 300px;
+            height: 56px;
+        }
+
+        .vehicle-details p {
+            width: 148px;
+            height: 20px;
+            margin: 0;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 100%;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-family: "Lato", sans-serif;
+        }
+
+        .vehicle-rating {
+            width: 285px;
+            height: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            border-top: 1px solid #ffffff73;
+            padding-top: 10px;
+        }
+
+        .vehicle-rating .star-rating {
+            width: 140px;
+        }
+
+        .vehicle-rating p {
+            width: 130px;
+            height: 19px;
+            margin: 0;
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0;
+            color: #ffffff;
+        }
+
+        .why-choose-us,
+        .location {
+            background: #12232E;
+            max-width: 100%;
+            padding: 30px 10px;
+            text-align: center;
+        }
+
+        .why-choose-us h3,
+        .location h3 {
+            font-family: "Lato", sans-serif;
+            font-weight: 800;
+            font-size: 75px;
+            line-height: 100%;
+            letter-spacing: 0;
+            text-align: center;
+            margin: 0 0 20px 0;
+            color: #fff;
+        }
+
+        .why-choose-us p,
+        .location p {
+            height: 58px;
+            text-align: center;
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: 0;
+            color: #fff;
+            width: 958px;
+            margin: 0 auto;
+        }
+
+        .vehicle-parts {
+            background: #0B0C10;
+            padding: 100px 0;
+        }
+
+        .vehicle-parts-listings {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            max-width: 100%;
+        }
+
+        .vehicle-parts .vehicle-parts-listings .parts {
+            display: flex;
+            max-width: 42%;
+        }
+
+        .parts .parts-detail h3 {
+            width: 250px;
+            height: 47px;
+            font-family: "Lato", sans-serif;
+            font-weight: 600;
+            font-size: 39.1px;
+            line-height: 100%;
+            letter-spacing: 0;
+            color: #fff;
+        }
+
+        .parts .parts-detail p {
+            width: 401px;
+            height: 120px;
+            font-family: "Lato", sans-serif;
+            font-weight: 600;
+            font-size: 22.11px;
+            line-height: 100%;
+            letter-spacing: 0;
+            color: #fff;
+        }
+
+        .how-works {
+            background: #152836;
+            padding: 10px;
+        }
+
+        .section-main {
+            text-align: center;
+            margin: 75px 0px;
+        }
+
+        .section-main .heading h3 {
+            height: 50px;
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 100%;
+            letter-spacing: 0;
+            color: #fff;
+            margin-bottom: 0;
+        }
+
+        .section-main .heading p {
+            height: 42px;
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 27px;
+            line-height: 100%;
+            letter-spacing: 0;
+            color: #fff;
+            margin-top: 0;
+        }
+
+        .all-services {
+            display: flex;
+            justify-content: center;
+            gap: 5%;
+        }
+
+        .all-services .service {
+            position: relative;
+            text-align: center;
+        }
+
+        .all-services .service p {
+            position: absolute;
+            width: 190px;
+            height: 368px;
+            font-family: "Inspiration", cursive;
+            font-weight: 400;
+            font-size: 357px;
+            line-height: 100%;
+            letter-spacing: 0;
+            color: #fff;
+            z-index: 1;
+        }
+
+        .p1 {
+            top: -475px;
+            left: -77px;
+        }
+
+        .p2 {
+            top: -193px;
+            left: 126px;
+        }
+
+        .p3 {
+            top: -489px;
+            left: -25px;
+        }
+
+        .p4 {
+            top: -188px;
+            left: -50px;
+        }
+
+        .quality-services {
+            background: #0B0C10;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 5%;
+            padding-top: 100px;
+        }
+
+        .product-content h3 {
+            width: 410px;
+            height: 120px;
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            font-size: 39px;
+            line-height: 100%;
+            letter-spacing: 0;
+            color: #fff;
+        }
+
+        .product-content p {
+            width: 480px;
+            height: 165px;
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 100%;
+            letter-spacing: 0;
+            color: #fff;
+        }
+
+        .product-content .features {
+            width: 404px;
+            height: 220px;
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 100%;
+            letter-spacing: 0;
+            color: #fff;
+        }
+
+        .product-img {
+            position: relative;
+            height: fit-content;
+            z-index: 1;
+        }
+
+        .product-img::before {
+            content: "";
+            position: absolute;
+            border: solid #000000;
+            border-width: 3px;
+            width: 98%;
+            height: 97%;
+            left: -30px;
+            top: -30px;
+            z-index: -1;
+        }
+
+        .contact {
+            background: #0B0C10;
+        }
+
+        .contact-section {
+            width: 1230px;
+            height: 600px;
+            display: flex;
+            gap: 5%;
+            padding-top: 80px;
+        }
+
+        .map {
+            height: fit-content;
+        }
+
+        .contact-info h3 {
+            width: 127px;
+            height: 43px;
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 100%;
+            letter-spacing: 0;
+            color: #fff;
+            margin: 0 0 5px 0;
+        }
+
+        .contact-info .form {
+            color: #fff;
+            font-family: "Lato", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0;
+        }
+
+        .form input {
+            border-radius: 3px;
+            background: #152836;
+            width: 330px;
+            height: 25px;
+            border: 0;
+            margin-top: 5px;
+            padding: 6px 8px;
+        }
+
+        .form input::placeholder,
+        textarea::placeholder {
+            color: #fff;
+        }
+
+        .form textarea {
+            background: #152836;
+            width: 330px;
+            height: 130px;
+            border-radius: 3px;
+            border: 0;
+            margin-top: 5px;
+            padding: 10px 10px;
+        }
+
+        .form input#submit {
+            color: #fff;
+            padding: 6px 8px;
+            height: 40px;
+            width: 352px;
+            background: #007CC7;
+        }
+
+        .end {
+            background: #12232E;
+            max-width: 100%;
+            padding: 30px 10px;
+            height: 140px;
+        }
+
+        .company-info {
+            display: flex;
+            gap: 30%;
+            border-top: 2px solid #ffffff24;
+            border-bottom: 2px solid #ffffff3d;
+            margin-top: 30px;
+        }
+
+        .info {
+            width: 160px;
+        }
+
+        .info .info-sec {
+            list-style-type: none;
+        }
+
+        .info .info-sec li {
+            margin: 10px 0;
+        }
+
+        .info .info-sec li a {
+            color: #fff;
+            font-family: "Lato", sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .info-sec .icons {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            gap: 25%;
+            margin-top: 25px;
+        }
+
+        .info-sec .icons .fa {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .hero {
+                height: auto;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .containar {
+                max-width: 100%;
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+
+            .about-section {
+                padding: 0;
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+            }
+
+            .about-contant h1 {
+                font-size: 36px;
+                text-align: center;
+            }
+
+            .about-contant p {
+                font-size: 18px;
+                line-height: 26px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero-btn {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .hero-btn a {
+                width: 180px;
+                font-size: 16px;
+                padding: 12px;
+            }
+
+            .about-form {
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                margin-top: 40px;
+            }
+
+            .search-input {
+                width: 48%;
+            }
+
+            .search-input input {
+                padding: 12px 50px;
+                font-size: 16px;
+            }
+
+            .sreach-icon {
+                left: 20px;
+            }
+
+            .search-input #cars,
+            .search-input #cars1 {
+                width: 48%;
+                padding: 10px;
+                font-size: 15px;
+            }
+
+            .search-btn {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin: 20px 0 0 0;
+            }
+
+            .search-btn a {
+                width: 200px;
+                font-size: 16px;
+                padding: 12px;
+            }
+
+            .main {
+                height: auto;
+            }
+
+            .main .about-main {
+                padding-top: 100px;
+            }
+
+            .about-main .car {
+                flex-direction: column;
+                gap: 40px;
+                align-items: center;
+            }
+
+            .car .buy-car {
+                width: 100%;
+                max-width: 600px;
+                height: auto;
+            }
+
+            .car .buy-car .logo {
+                width: 100%;
+                max-width: 600px;
+                height: auto;
+                padding: 25px;
+            }
+
+            .car .buy-car .details {
+                width: 100%;
+                padding: 20px;
+                height: auto;
+                text-align: center;
+            }
+
+            .car .buy-car .details p {
+                font-size: 18px;
+                width: 100%;
+            }
+
+            .car .buy-car .details h3 {
+                font-size: 24px;
+            }
+
+            .car .buy-car .logo h2 {
+                font-size: 20px;
+            }
+
+            .shopping {
+                padding: 30px 0;
+            }
+
+            .containar {
+                padding: 0 15px;
+                margin: 0px 30px;
+            }
+
+            .vehicle-listings {
+                justify-content: center;
+                gap: 20px;
+                padding-left: 0;
+                flex-wrap: wrap;
+            }
+
+            .vehicle-card {
+                width: 48%;
+                max-width: 330px;
+                padding: 14px;
+                height: auto;
+                box-sizing: border-box;
+            }
+
+            .vehicle-img {
+                height: 200px;
+            }
+
+            .vehicle-card-detail,
+            .vehicle-title,
+            .vehicle-location,
+            .vehicle-price,
+            .vehicle-rating,
+            .vehicle-rating p,
+            .vehicle-rating .star-rating {
+                width: 100%;
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+
+            .vehicle-card-detail {
+                padding: 10px 0;
+            }
+
+            .new-badge {
+                font-size: 13px;
+                padding: 3px 12px;
+                margin-bottom: 8px;
+            }
+
+            .vehicle-title {
+                font-size: 18px;
+                line-height: 1.3;
+                margin: 4px 0;
+            }
+
+            .vehicle-price {
+                font-size: 22px;
+                margin: 4px 0;
+            }
+
+            .vehicle-location {
+                font-size: 15px;
+                margin: 4px 0;
+            }
+
+            .vehicle-details {
+                width: 100%;
+                margin: 12px 0;
+                flex-wrap: wrap;
+            }
+
+            .vehicle-details p {
+                width: 50%;
+                font-size: 15px;
+                margin: 3px 0;
+                line-height: 1.3;
+            }
+
+            .vehicle-rating {
+                padding-top: 8px;
+                margin-top: 8px;
+                border-top: 1px solid #ffffff73;
+                display: flex;
+                align-items: center;
+            }
+
+            .star-rating img {
+                width: 15px;
+                height: 15px;
+            }
+
+
+            .explore-brands {
+                padding: 40px 20px;
+                height: auto;
+            }
+
+            .explore-brands h2 {
+                font-size: 60px;
+                margin-bottom: 20px;
+            }
+
+            .explore-brands p {
+                font-size: 20px;
+                width: 80%;
+                margin: 0 auto;
+                padding: 0;
+                line-height: 1.4;
+            }
+
+            .brand-logo {
+                padding: 40px 0;
+            }
+
+            .brand-logo .logo-img {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 25px;
+                padding: 0 20px;
+                max-width: 900px;
+                margin: 0 auto;
+            }
+
+            .brand-logo .logo-img img {
+                width: 33.33%;
+                max-width: 150px;
+                height: auto;
+            }
+
+            .why-choose-us {
+                padding: 40px 20px;
+                height: auto;
+            }
+
+            .why-choose-us h2 {
+                font-size: 60px;
+                margin-bottom: 20px;
+            }
+
+            .why-choose-us p {
+                font-size: 20px;
+                width: 80%;
+                margin: 0 auto;
+                padding: 0;
+                line-height: 1.4;
+            }
+
+            .location {
+                padding: 40px 20px;
+                height: auto;
+            }
+
+            .location h2 {
+                font-size: 60px;
+                margin-bottom: 20px;
+            }
+
+            .location p {
+                font-size: 20px;
+                width: 80%;
+                margin: 0 auto;
+                padding: 0;
+                line-height: 1.4;
+            }
+
+            .why-choose-us {
+                padding: 25px 20px;
+                text-align: center;
+            }
+
+            .why-choose-us h3 {
+                font-size: 48px;
+                line-height: 1.2;
+                margin-bottom: 18px;
+            }
+
+            .why-choose-us p {
+                font-size: 20px;
+                line-height: 1.4;
+                width: 90%;
+                height: auto;
+                margin: 0 auto;
+            }
+
+            .vehicle-parts {
+                padding: 70px 0;
+            }
+
+            .vehicle-parts .vehicle-parts-listings {
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: space-around;
+            }
+
+            .vehicle-parts .vehicle-parts-listings .parts {
+                max-width: 48%;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .parts .parts-detail h3 {
+                font-size: 32px;
+                width: 100%;
+                line-height: 1.2;
+            }
+
+            .parts .parts-detail p {
+                font-size: 18px;
+                width: 100%;
+                line-height: 1.4;
+            }
+
+            .section-main {
+                margin: 50px 0;
+            }
+
+            .section-main .heading h3 {
+                font-size: 32px;
+            }
+
+            .section-main .heading p {
+                font-size: 20px;
+            }
+
+            .all-services {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 70px;
+                width: 89%;
+                margin: 0 60px;
+            }
+
+            .all-services .service p {
+                font-size: 330px;
+                width: auto;
+                height: auto;
+                z-index: 2;
+            }
+
+            .all-services .service img {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .p1 {
+                top: -425px;
+                left: -35px;
+            }
+
+            .p2 {
+                top: -155px;
+                left: 145px;
+            }
+
+            .p3 {
+                top: -443px;
+                left: -18px;
+            }
+
+            .p4 {
+                top: -145px;
+                left: -53px;
+            }
+
+            .quality-services {
+                height: auto;
+                padding: 70px 0;
+                width: 100%;
+            }
+
+            .product-img {
+                position: relative;
+                z-index: 1;
+            }
+
+            .product-content h3 {
+                width: 390px;
+            }
+
+            .product-content p {
+                width: 390px;
+                line-height: 1.2;
+                height: 230px;
+            }
+
+            .product-content .features {
+                width: 345px;
+                line-height: 1.2;
+            }
+
+            .company-info {
+                display: flex;
+                gap: 25%;
+                margin-top: 30px;
+            }
+
+            .info .info-sec {
+                list-style-type: none;
+                width: 74px;
+                padding: 0;
+            }
+
+            .contact-section {
+                width: 750px;
+                height: 600px;
+            }
+
+            iframe {
+                width: 330px;
+            }
+
+        }
+
+        @media (max-width: 767px) {
+            .hero {
+                height: auto;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .about-section {
+                padding: 0 20px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .about-contant h1 {
+                font-size: 28px;
+                text-align: center;
+            }
+
+            .about-contant p {
+                font-size: 16px;
+                line-height: 24px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero-btn {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-btn a {
+                width: 100%;
+                max-width: 250px;
+                font-size: 16px;
+            }
+
+            .about-form {
+                flex-direction: column;
+                align-items: stretch;
+                margin-top: 30px;
+                gap: 15px;
+            }
+
+            .search-input {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .search-input input {
+                padding: 14px 40px;
+            }
+
+            .search-input #cars,
+            .search-input #cars1 {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .search-btn {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin: 20px 0 0 0;
+                padding: 0 10px;
+                box-sizing: border-box;
+            }
+
+            .search-btn a {
+                width: 100%;
+                max-width: 250px;
+                font-size: 16px;
+                padding: 12px;
+            }
+
+            .main {
+                height: auto;
+            }
+
+            .main .about-main {
+                padding-top: 40px;
+            }
+
+            .about-main .car {
+                flex-direction: column;
+                gap: 30px;
+                align-items: center;
+            }
+
+            .car .buy-car {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .car .buy-car .logo {
+                width: 100%;
+                max-width: 100%;
+                padding: 20px;
+                border-width: 2px;
+                box-sizing: border-box;
+            }
+
+            .car .buy-car .details {
+                width: 100%;
+                padding: 15px 4px;
+                height: auto;
+                text-align: center;
+            }
+
+            .car .buy-car .details p {
+                width: 100%;
+                font-size: 16px;
+            }
+
+            .car .buy-car .details h3 {
+                font-size: 20px;
+            }
+
+            .car .buy-car .logo h2 {
+                font-size: 18px;
+            }
+
+            .shopping {
+                padding: 20px 0;
+            }
+
+            .containar {
+                max-width: 100%;
+                box-sizing: border-box;
+                margin: 0px 20px;
+            }
+
+            .vehicle-listings {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+                padding-left: 0;
+            }
+
+            .vehicle-card {
+                width: 100%;
+                max-width: 350px;
+                padding: 12px;
+                height: auto;
+                box-sizing: border-box;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .vehicle-img {
+                height: 190px;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .vehicle-card-detail {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 8px 0;
+                box-sizing: border-box;
+                height: auto;
+            }
+
+
+            .new-badge {
+                font-size: 13px;
+                padding: 3px 10px;
+                margin-bottom: 8px;
+            }
+
+            .vehicle-title {
+                font-size: 17px;
+                width: 100%;
+                line-height: 1.3;
+                margin: 4px 0;
+            }
+
+            .vehicle-price {
+                font-size: 20px;
+                margin: 4px 0;
+                width: 100%;
+            }
+
+            .vehicle-location {
+                font-size: 15px;
+                line-height: 1.3;
+                margin: 4px 0;
+                width: 100%;
+            }
+
+            .vehicle-details {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 12px 0;
+                height: auto;
+                padding: 0 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .vehicle-details p {
+                font-size: 16px;
+                margin: 5px 0;
+                line-height: 1.4;
+                width: 100%;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 6px;
+                box-sizing: border-box;
+                padding: 0;
+            }
+
+            .vehicle-rating {
+                width: 100%;
+                padding-top: 8px;
+                margin-top: 8px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-top: 1px solid #ffffff73;
+            }
+
+            .vehicle-rating .star-rating {
+                width: auto;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 4px;
+            }
+
+            .vehicle-rating p {
+                width: auto;
+                font-size: 14px;
+            }
+
+            .star-rating img {
+                width: 14px;
+                height: 14px;
+            }
+
+            .explore-brands {
+                height: auto;
+                padding: 30px 15px;
+            }
+
+            .explore-brands h2 {
+                font-size: 40px;
+                margin: 0 0 15px 0;
+            }
+
+            .explore-brands p {
+                font-size: 16px;
+                width: 100%;
+                padding: 0;
+                height: auto;
+                line-height: 1.5;
+            }
+
+            .brand-logo {
+                height: auto;
+                padding: 20px 0;
+            }
+
+            .brand-logo .logo-img {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+                padding: 15px;
+            }
+
+            .brand-logo .logo-img img {
+                width: 50%;
+                max-width: 120px;
+                height: auto;
+                aspect-ratio: 1/1;
+                object-fit: contain;
+            }
+
+            .why-choose-us,
+            .location,
+            .end {
+                padding: 15px 15px;
+                text-align: center;
+                height: auto;
+            }
+
+            .why-choose-us h3,
+            .location h3 {
+                font-size: 32px;
+                line-height: 1.2;
+                margin-bottom: 16px;
+            }
+
+            .why-choose-us p,
+            .location p {
+                font-size: 16px;
+                line-height: 1.4;
+                width: 100%;
+                height: auto;
+            }
+
+            .vehicle-parts {
+                padding: 50px 0;
+            }
+
+            .vehicle-parts .vehicle-parts-listings {
+                flex-direction: column;
+                gap: 20px;
+                padding: 0 15px;
+            }
+
+            .vehicle-parts .vehicle-parts-listings .parts {
+                flex-direction: column;
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .parts .parts-detail h3 {
+                width: 100%;
+                font-size: 28px;
+                line-height: 1.2;
+            }
+
+            .parts .parts-detail p {
+                width: 100%;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            .section-main {
+                margin: 40px 0;
+                padding: 0 10px;
+            }
+
+            .section-main .heading h3 {
+                font-size: 26px;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            .section-main .heading p {
+                font-size: 16px;
+                height: auto;
+                margin-top: 0;
+            }
+
+            .all-services {
+                flex-direction: column;
+                gap: 60px;
+            }
+
+
+            .all-services .service p {
+                font-size: 370px;
+                z-index: 2;
+            }
+
+            .all-services .service img {
+                width: 90%;
+            }
+
+            .p1 {
+                top: -483px;
+                left: -51px;
+            }
+
+            .p2 {
+                top: -510px;
+                left: 150px;
+            }
+
+            .p3 {
+                top: -500px;
+                left: -10px;
+            }
+
+            .p4 {
+                top: -195px;
+                left: 121px;
+            }
+
+            .quality-services {
+                padding: 10px;
+            }
+
+            .services {
+                display: flex;
+                justify-content: center;
+                gap: 5%;
+                padding-top: 100px;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+
+            .product-content {
+                width: 360px;
+            }
+
+            .product-content h3 {
+                width: 360px;
+                height: 120px;
+            }
+
+            .product-content p {
+                width: 360px;
+                height: 250px;
+                font-size: 21px;
+                line-height: 30px;
+            }
+
+            .product-content .features {
+                width: 320px;
+                height: 280px;
+                font-size: 23px;
+                line-height: 35px;
+            }
+
+            .contact {
+                width: 100%;
+            }
+
+            .contact-section {
+                width: 315px;
+                height: 930px;
+                display: flex;
+                gap: 5%;
+                padding-top: 80px;
+                flex-direction: column;
+            }
+
+            .map {
+                height: fit-content;
+                width: 300px;
+            }
+
+            .map iframe {
+                width: 300px;
+                height: 300px;
+            }
+
+            .contact-info h3 {
+                width: 300px;
+                height: 43px;
+                font-size: 40px;
+            }
+
+            .form input {
+                width: 300px;
+            }
+
+            .form textarea {
+                width: 300px;
+            }
+
+            .form input#submit {
+                width: 320px;
+            }
+
+            .company-info {
+                display: flex;
+                margin-top: 30px;
+                width: 100%;
+                gap: 5%;
+                height: 120px;
+            }
+
+            .info {
+                width: 25%;
+            }
+
+            .info .info-sec {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .info .info-sec li a {
+                font-size: 10px;
+                font-weight: 400;
+            }
+
+            .info-sec .icons {
+                margin-top: 25px;
+                margin-left: 25px;
+            }
+        }
+</style>
+
+<body>
+
+
+    <section class="hero">
+        <div class="about-section">
+            <div class="about-contant">
+                <h1>Find your dream car</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="hero-btn">
+                    <a href="#" class="search">Search</a>
+                    <a href="#" class="Learn-more">Leran More</a>
+
+                </div>
+            </div>
+            <div class="about-form">
+                <div class="search-input">
+                    <div class="sreach-icon">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <input type="search" id="gsearch" name="gsearch" placeholder="Search">
+                </div>
+                <div class="search-input">
+                    <select id="cars">
+                        <option value="volvo">Modal</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+
+                    <select id="cars1">
+                        <option value="volvo">Brand</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+                <div class="search-btn">
+                    <a href="#" class="search">Search</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="containar">
+            <div class="about-main">
+                <div class="car">
+                    <div class="buy-car">
+                        <div class="logo">
+                            <img src="assets/img/icon-car.png">
+                            <h2>Buy a new car</h2>
+                        </div>
+                        <div class="details">
+                            <h3>Extensive Inventory</h3>
+                            <p>Incididunt labore dolore magna aliqua enim veniam quis nostrud ad miniys exercitation
+                                ullamco laboris nisiut aliquip</p>
+
+                        </div>
+                    </div>
+                    <div class="buy-car">
+                        <div class="logo">
+                            <img src="assets/img/la_car.png">
+                            <h2>Buy an used car</h2>
+                        </div>
+                        <div class="details">
+                            <h3>Secure Car Financing</h3>
+                            <p>Incididunt labore dolore magna aliqua enim veniam quis nostrud ad miniys exercitation
+                                ullamco laboris nisiut aliquip.</p>
+
+                        </div>
+                    </div>
+                    <div class="buy-car">
+                        <div class="logo">
+                            <img src="assets/img/ic_outline-sell.png">
+                            <h2>Sell my car</h2>
+                        </div>
+                        <div class="details">
+                            <h3>Extensive Dealer Network</h3>
+                            <p>Incididunt labore dolore magna aliqua enim veniam quis nostrud ad miniys exercitation
+                                ullamco laboris nisiut aliquip.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="explore-brands">
+        <h2>Explore Popular Brands</h2>
+        <p>Incididunt labore dolore magna aliqua enim veniam quis nostrud tempor tempor adispecing miny exercitation
+            ullamco laboris nisiut aliquip.</p>
+    </section>
+    <section class="brand-logo">
+        <div class="logo-img">
+            <img src="assets/img/tesla1.png">
+            <img src="assets/img/audi1.png">
+            <img src="assets/img/Rectangle104.png">
+            <img src="assets/img/Rectangle105.png">
+            <img src="assets/img/Rectangle106.png">
+            <img src="assets/img/Rectangle107.png">
+        </div>
+    </section>
+
+    <section class="shopping">
+        <div class="containar">
+            <div class="vehicle-listings">
+
+                <div class="vehicle-card">
+                    <div class="vehicle-img">
+                        <img src="assets/img/Tesla.png">
+                    </div>
+                    <div class="vehicle-card-detail">
+                        <span class="new-badge">New</span>
+                        <h3 class="vehicle-title">Tesla Model 3 Standard Range Plus</h3>
+                        <p class="vehicle-price">$56,690</p>
+                        <p class="vehicle-location">Florida, USA</p>
+                        <div class="vehicle-details">
+                            <p><img src="assets/img/iwwa_year.png">2020</p>
+                            <p><img src="assets/img/tabler_steering-wheel.png">Rear-wheel Drive</p>
+                            <p><img src="assets/img/clarity_fuel-line.png">Electric</p>
+                            <p><img src="assets/img/bi_people.png">5</p>
+                        </div>
+                        <div class="vehicle-rating">
+                            <div class="star-rating">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star_border.png">
+                            </div>
+                            <p>(12 Reviews)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <div class="vehicle-img">
+                        <img src="assets/img/Ford.png">
+                    </div>
+                    <div class="vehicle-card-detail">
+                        <span class="new-badge">New</span>
+                        <h3 class="vehicle-title">Ford F-250 Super Duty</h3>
+                        <p class="vehicle-price">$82,098</p>
+                        <p class="vehicle-location">Milan, Italy</p>
+                        <div class="vehicle-details">
+                            <p><img src="assets/img/iwwa_year.png">2021</p>
+                            <p><img src="assets/img/tabler_steering-wheel.png">Four-wheel Drive</p>
+                            <p><img src="assets/img/clarity_fuel-line.png">Diesel</p>
+                            <p><img src="assets/img/bi_people.png">5</p>
+                        </div>
+                        <div class="vehicle-rating">
+                            <div class="star-rating">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star_border.png">
+                            </div>
+                            <p>(12 Reviews)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <div class="vehicle-img">
+                        <img src="assets/img/Honda.png">
+                    </div>
+                    <div class="vehicle-card-detail">
+                        <span class="new-badge">New</span>
+                        <h3 class="vehicle-title">Honda Pilot Touring 7-Passenger</h3>
+                        <p class="vehicle-price">$43,735</p>
+                        <p class="vehicle-location">Caracas, Venezuela</p>
+                        <div class="vehicle-details">
+                            <p><img src="assets/img/iwwa_year.png">2021</p>
+                            <p><img src="assets/img/tabler_steering-wheel.png">All-wheel Drive</p>
+                            <p><img src="assets/img/clarity_fuel-line.png">Gasoline</p>
+                            <p><img src="assets/img/bi_people.png">7</p>
+                        </div>
+                        <div class="vehicle-rating">
+                            <div class="star-rating">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star_border.png">
+                            </div>
+                            <p>(12 Reviews)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <div class="vehicle-img">
+                        <img src="assets/img/Audi.png">
+                    </div>
+                    <div class="vehicle-card-detail">
+                        <span class="new-badge">New</span>
+                        <h3 class="vehicle-title">Tesla Model 3 Standard Range Plus</h3>
+                        <p class="vehicle-price">$56,690</p>
+                        <p class="vehicle-location">Florida, USA</p>
+                        <div class="vehicle-details">
+                            <p><img src="assets/img/iwwa_year.png">2020</p>
+                            <p><img src="assets/img/tabler_steering-wheel.png">Rear-wheel Drive</p>
+                            <p><img src="assets/img/clarity_fuel-line.png">Electric</p>
+                            <p><img src="assets/img/bi_people.png">5</p>
+                        </div>
+                        <div class="vehicle-rating">
+                            <div class="star-rating">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star_border.png">
+                            </div>
+                            <p>(12 Reviews)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <div class="vehicle-img">
+                        <img src="assets/img/LandRover.png">
+                    </div>
+                    <div class="vehicle-card-detail">
+                        <span class="new-badge">New</span>
+                        <h3 class="vehicle-title">Tesla Model 3 Standard Range Plus</h3>
+                        <p class="vehicle-price">$56,690</p>
+                        <p class="vehicle-location">Florida, USA</p>
+                        <div class="vehicle-details">
+                            <p><img src="assets/img/iwwa_year.png">2020</p>
+                            <p><img src="assets/img/tabler_steering-wheel.png">Rear-wheel Drive</p>
+                            <p><img src="assets/img/clarity_fuel-line.png">Electric</p>
+                            <p><img src="assets/img/bi_people.png">5</p>
+                        </div>
+                        <div class="vehicle-rating">
+                            <div class="star-rating">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star_border.png">
+                            </div>
+                            <p>(12 Reviews)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <div class="vehicle-img">
+                        <img src="assets/img/MiniCooper.png">
+                    </div>
+                    <div class="vehicle-card-detail">
+                        <span class="new-badge">New</span>
+                        <h3 class="vehicle-title">Tesla Model 3 Standard Range Plus</h3>
+                        <p class="vehicle-price">$56,690</p>
+                        <p class="vehicle-location">Florida, USA</p>
+                        <div class="vehicle-details">
+                            <p><img src="assets/img/iwwa_year.png">2020</p>
+                            <p><img src="assets/img/tabler_steering-wheel.png">Rear-wheel Drive</p>
+                            <p><img src="assets/img/clarity_fuel-line.png">Electric</p>
+                            <p><img src="assets/img/bi_people.png">5</p>
+                        </div>
+                        <div class="vehicle-rating">
+                            <div class="star-rating">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star.png">
+                                <img src="assets/img/star_border.png">
+                            </div>
+                            <p>(12 Reviews)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="why-choose-us">
+        <h3>Why Choose Us</h3>
+        <p>Incididunt labore dolore magna aliqua enim veniam quis nostrud ad miniys exercitation ullamco laboris nisiut
+            aliquip</p>
+    </section>
+    <section class="vehicle-parts">
+        <div class="vehicle-parts-listings">
+
+            <div class="parts">
+                <div class="parts-img">
+                    <img src="assets/img/OIUFTK01.png">
+                </div>
+                <div class="parts-detail">
+                    <h3>Lorem ipsum</h3>
+                    <p>Incididunt labore dolore magna aliqua enim veniam quis nostrud ad miniys exercitation ullamco
+                        laboris nisiut aliquip</p>
+                </div>
+            </div>
+
+            <div class="parts">
+                <div class="parts-img">
+                    <img src="assets/img/OIUFTK11.png ">
+                </div>
+                <div class="parts-detail">
+                    <h3>Lorem ipsum</h3>
+                    <p>Incididunt labore dolore magna aliqua enim veniam quis nostrud ad miniys exercitation ullamco
+                        laboris nisiut aliquip</p>
+                </div>
+            </div>
+
+            <div class="parts">
+                <div class="parts-img">
+                    <img src="assets/img/OIUFTK21.png ">
+                </div>
+                <div class="parts-detail">
+                    <h3>Lorem ipsum</h3>
+                    <p>Incididunt labore dolore magna aliqua enim veniam quis nostrud ad miniys exercitation ullamco
+                        laboris nisiut aliquip</p>
+                </div>
+            </div>
+
+            <div class="parts">
+                <div class="parts-img">
+                    <img src="assets/img/OIUFTK31.png">
+                </div>
+                <div class="parts-detail">
+                    <h3>Lorem ipsum</h3>
+                    <p>Incididunt labore dolore magna aliqua enim veniam quis nostrud ad miniys exercitation ullamco
+                        laboris nisiut aliquip</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="how-works">
+        <div class="section-main">
+            <div class="heading">
+                <h3>How It Works</h3>
+                <p>These few steps will help you understand how our service works</p>
+            </div>
+            <div class="all-services">
+
+                <div class="service">
+                    <p class="p1">1</p>
+                    <div class="image">
+                        <img src="assets/img/Rectangle17.png">
+                    </div>
+
+                </div>
+
+                <div class="service">
+                    <p class="p2">2</p>
+                    <div class="image">
+                        <img src="assets/img/Rectangle18.png">
+                    </div>
+
+                </div>
+
+                <div class="service">
+                    <p class="p3">3</p>
+                    <div class="image">
+                        <img src="assets/img/Rectangle19.png">
+                    </div>
+
+                </div>
+
+                <div class="service">
+                    <p class="p4">4</p>
+                    <div class="image">
+                        <img src="assets/img/Rectangle20.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="quality-services">
+        <div class="containar">
+            <div class="services">
+                <div class="product-img">
+                    <img src="assets/img/Rectangle9.png" style="width: 100%;">
+                </div>
+                <div class="product-content">
+                    <h3>Quality Service and Customer Satisfaction!</h3>
+                    <p>We use the latest diagnostic equipment to guarantee your vehicle is repaired or serviced properly
+                        and
+                        in a timely fashion. We are a member of Professional Auto Service, an elite performance network,
+                        where independent service facilities share common goals of being world-class automotive service
+                        centers.</p>
+                    <ul class="features">
+                        <li>24 Month / 24,000km Nationwide Warranty</li>
+                        <li>Courtesy Local Shuttle Service</li>
+                        <li>Customer Rewards Program</li>
+                        <li>ASE Certified Technicians</li>
+                        <li>24-Hour Roadside Assistance</li>
+                        <li>Courtesy Loaner Vehicle</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="location">
+        <h3>Dealer Locations</h3>
+        <p>Incididunt labore dolore magna aliqua enim veniam quis nostrud ad miniys exercitation ullamco laboris nisiut
+            aliquip</p>
+    </section>
+    <section class="contact">
+        <div class="containar">
+            <div class="contact-section">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113874.30006273878!2d75.7081574248341!3d26.88533996439578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1749635823139!5m2!1sen!2sin"
+                        width="400" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact</h3>
+                    <div class="form">
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name" name="name" placeholder="Full Name"><br><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" placeholder="email@gmail.com"><br><br>
+                        <label for="phone">Phone</label><br>
+                        <input type="tel" id="phone" placeholder="000-000-000"><br><br>
+                        <label for="cmt">Comment</label><br>
+                        <textarea id="cmt" name="cmt" placeholder="Leave a message here "></textarea><br><br>
+                        <input type="submit" id="submit"><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="end">
+        <div class="containar">
+            <div class="company-info">
+                <div class="info">
+                    <ul class="info-sec">
+                        <li><a>ABOUT US</a></li>
+                        <li><a>FAQ</a></li>
+                        <li><a>CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <ul class="info-sec">
+                        <li><a>CUSTOMER SERVICE</a></li>
+                        <li><a>info@car.com</a></li>
+                        <li><a>240-865-3730</a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <ul class="info-sec">
+                        <li><a>AddressXYZ UUHFFIRIUHFUH IFEFRFRRFF</a></li>
+                        <li>
+                            <div class="icons">
+                                <i class="fa fa-facebook-f"></i>
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-youtube-play"></i>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
