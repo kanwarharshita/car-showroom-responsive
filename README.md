@@ -51,7 +51,7 @@ car-showroom-responsive/
 
 **Harshita Kanwar**  
 💻 Frontend Learner | Building real-world projects  
-🔗 [LinkedIn Profile](https://www.linkedin.com/in/kanwarharshita)
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/harshita-kanwar-326b37362/)
 
 ---
 
